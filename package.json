@@ -1,0 +1,30 @@
+{
+  "name": "mezzo-template",
+  "version": "0.0.1",
+  "description": "Mezzo middleware template",
+  "main": "lib/mezzo/template",
+  "scripts": {
+    "pretest": "npm run compile",
+    "prepublish": "npm run compile",
+    "compile": "coffee --compile --output lib/ src/",
+    "start": "coffee -w --compile --output lib/ src/",
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:invrs/mezzo-template.git"
+  },
+  "author": "Winton Welsh <winton@cyclo.ps>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/invrs/mezzo-template/issues"
+  },
+  "homepage": "https://github.com/invrs/mezzo-template",
+  "dependencies": {
+    "mezzo": ""
+  },
+  "devDependencies": {
+    "coffee-script": "",
+    "jasmine": ""
+  }
+}
